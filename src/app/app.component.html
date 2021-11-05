@@ -1,0 +1,17 @@
+<hello name="{{ name }}"></hello>
+<p>Start editing to see some magic happen :)</p>
+
+<div *ngFor="let result of results">
+  someArray: {{ someArray }}
+  <br />
+  <br />
+  pipe: {{ someArray | inArray: result.id }}
+  <br />
+  <br />
+  result.id:{{ result.id }}
+  <br />
+  <br />
+  <div [ngClass]="{ myclass: someArray | inArray: result.id }">
+    {{ result.name }}
+  </div>
+</div>
